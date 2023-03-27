@@ -7,8 +7,12 @@ public class AdaptorSimulator {
         Turkey turkey = new WildTurkey();
         Duck turkeyAdaptor = new TurkeyAdaptor(turkey);
         turkey.gobble();
+
         turkeyAdaptor.quack();
         duck.quack();
 
+        Turkey duckAdaptor = new DuckAdaptor(duck);
+        duckAdaptor.gobble();
+        duckAdaptor.fly();
     }
 }
